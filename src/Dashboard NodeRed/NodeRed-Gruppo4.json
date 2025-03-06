@@ -1,0 +1,949 @@
+[
+    {
+        "id": "2a535143036c70e1",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5911f7d0a3f15044",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "70b4b8500e1d127d",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "99d472ed65cdb75b",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#519e24",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 80,
+                "sy": 80,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "db4f3750db30304e",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "bff5bf949e2a8452",
+        "type": "mqtt-broker",
+        "name": "mosquitto",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b7939826344c6d12",
+        "type": "ui_tab",
+        "name": "SafeGuard App",
+        "icon": "https",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "235a53f597a07159",
+        "type": "ui_group",
+        "name": "Inserimento Codice",
+        "tab": "b7939826344c6d12",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "29b888224efa140c",
+        "type": "ui_tab",
+        "name": "Cambio Password",
+        "icon": "loop",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e4720e611851adcb",
+        "type": "ui_group",
+        "name": "Cambio codice",
+        "tab": "29b888224efa140c",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "029c61f57ea96078",
+        "type": "ui_group",
+        "name": "Dashboard",
+        "tab": "b7939826344c6d12",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "35ae598e42d2aafa",
+        "type": "ui_tab",
+        "name": "Record2",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ca719da6bf0a85f3",
+        "type": "ui_group",
+        "name": "Record Allarmi",
+        "tab": "f0da83edebef1fb9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f0da83edebef1fb9",
+        "type": "ui_tab",
+        "name": "Storico Allarmi",
+        "icon": "history",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1eea1f46d5ae3d0d",
+        "type": "ui_group",
+        "name": "Humidity",
+        "tab": "b7939826344c6d12",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7e41b6fb0a374723",
+        "type": "ui_group",
+        "name": "Led Control",
+        "tab": "b7939826344c6d12",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "000ab0e52d3b1131",
+        "type": "mqtt out",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "codice/sblocco",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "bff5bf949e2a8452",
+        "x": 780,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "44af14ba21ce7c8c",
+        "type": "ui_form",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "label": "Inserire Codice (max 4 cifre)",
+        "group": "235a53f597a07159",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Codice:",
+                "value": "code",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "code": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "codice/sblocco",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "35f7eb11f5bea83c"
+            ]
+        ]
+    },
+    {
+        "id": "19189ac7586067cf",
+        "type": "ui_form",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "label": "Inserisci vecchio e nuovo codice",
+        "group": "e4720e611851adcb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Codice vecchio:",
+                "value": "old_code",
+                "type": "password",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Nuovo codice:",
+                "value": "new_code",
+                "type": "password",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "old_code": "",
+            "new_code": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "cambio/codice",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "6c13afe7942b90a2"
+            ]
+        ]
+    },
+    {
+        "id": "a2e360fa1271659b",
+        "type": "mqtt out",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "cambio/codice",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "bff5bf949e2a8452",
+        "x": 780,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "35f7eb11f5bea83c",
+        "type": "function",
+        "z": "2a535143036c70e1",
+        "name": "Lunghezza=4",
+        "func": "var password = msg.payload.code; // Assume che il campo di input sia denominato \"password\"\n\nif (password.length === 4) {\n    return msg; // La lunghezza della password è corretta, passa avanti nella flow\n} else {\n    var mqttMessage = {\n        topic: \"Codice non valido\",\n        payload: \"Inserire un codice di 4 cifre\",\n        qos: 1, // QoS (Quality of Service) desiderata\n        retain: false // Imposta su true se desideri che il messaggio sia mantenuto dal broker MQTT\n    };\n\n    return mqttMessage ;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 60,
+        "wires": [
+            [
+                "c86570e226b823d5"
+            ]
+        ]
+    },
+    {
+        "id": "c86570e226b823d5",
+        "type": "switch",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Codice non valido",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Codice non valido",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 100,
+        "wires": [
+            [
+                "000ab0e52d3b1131"
+            ],
+            [
+                "e16742e8ced6e568"
+            ]
+        ]
+    },
+    {
+        "id": "e16742e8ced6e568",
+        "type": "ui_toast",
+        "z": "2a535143036c70e1",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Codice non valido",
+        "name": "",
+        "x": 770,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c13afe7942b90a2",
+        "type": "function",
+        "z": "2a535143036c70e1",
+        "name": "Lunghezza=4",
+        "func": "var vecchio_codice = msg.payload.old_code; \nvar nuovo_codice = msg.payload.new_code;\n\nif (vecchio_codice.length === 4 && nuovo_codice.length === 4) {\n    return msg; // La lunghezza della password è corretta, passa avanti nella flow\n} else {\n    var mqttMessage = {\n        topic: \"Codice non valido\",\n        payload: \"Inserire un codice di 4 cifre\",\n        qos: 1, // QoS (Quality of Service) desiderata\n        retain: false // Imposta su true se desideri che il messaggio sia mantenuto dal broker MQTT\n    };\n\n    return mqttMessage ;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 340,
+        "wires": [
+            [
+                "6d8e965ea5ee005c"
+            ]
+        ]
+    },
+    {
+        "id": "6d8e965ea5ee005c",
+        "type": "switch",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Codice non valido",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Codice non valido",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "a2e360fa1271659b"
+            ],
+            [
+                "1b4251aff15d9803"
+            ]
+        ]
+    },
+    {
+        "id": "1b4251aff15d9803",
+        "type": "ui_toast",
+        "z": "2a535143036c70e1",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Codice non valido",
+        "name": "",
+        "x": 770,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "27950154c0bd67d1",
+        "type": "mqtt in",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "Codice non valido",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "bff5bf949e2a8452",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 480,
+        "wires": [
+            [
+                "5f6401340f37c4f9"
+            ]
+        ]
+    },
+    {
+        "id": "d00a8d9761466628",
+        "type": "mqtt in",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "Codice valido",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "bff5bf949e2a8452",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 560,
+        "wires": [
+            [
+                "5f6401340f37c4f9"
+            ]
+        ]
+    },
+    {
+        "id": "5f6401340f37c4f9",
+        "type": "ui_toast",
+        "z": "2a535143036c70e1",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 370,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5797408c112e530",
+        "type": "ui_template",
+        "z": "2a535143036c70e1",
+        "group": "235a53f597a07159",
+        "name": "link_cambio",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center;\">\n    <body>\n        <p>Vuoi modificare il codice? <a href=\"http://localhost:1880/ui/#!/1?socketid=L7WqzmEXIYwWOnqzAAAL\">CLICCA QUI!</a></p>\n    </body>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1e44848b6a04c89",
+        "type": "ui_template",
+        "z": "2a535143036c70e1",
+        "group": "e4720e611851adcb",
+        "name": "link_sblocco",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center;\">\n    <body>\n        <p>Torna alla <a href=\"http://localhost:1880/ui/#!/0?socketid=tl6SgpnZnnL3dCZnAAAP\">schermata di sblocco</a></p>\n    </body>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 150,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2537e02d80c6777",
+        "type": "ui_button",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "group": "235a53f597a07159",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "CHIUSURA CASSAFORTE",
+        "tooltip": "Assicurarsi che la cassaforte sia chiusa!",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "chiudi/cassa",
+        "topicType": "msg",
+        "x": 200,
+        "y": 160,
+        "wires": [
+            [
+                "1001f11f3dd79334"
+            ]
+        ]
+    },
+    {
+        "id": "1001f11f3dd79334",
+        "type": "mqtt out",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "chiudi/cassa",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "bff5bf949e2a8452",
+        "x": 490,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "ff0b2aa5e01aa8df",
+        "type": "mqtt in",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "Chiusura effettuata",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "bff5bf949e2a8452",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "5f6401340f37c4f9"
+            ]
+        ]
+    },
+    {
+        "id": "bc2af015d0abf4ca",
+        "type": "ui_button",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "group": "235a53f597a07159",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Verifica Presenza Oggetto",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "verifica/oggetto",
+        "topicType": "msg",
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "3a56284faaef7ea5"
+            ]
+        ]
+    },
+    {
+        "id": "3a56284faaef7ea5",
+        "type": "mqtt out",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "verifica/oggetto",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "bff5bf949e2a8452",
+        "x": 460,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9f94d2538d14524c",
+        "type": "mqtt in",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "Presenza Oggetto",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bff5bf949e2a8452",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 720,
+        "wires": [
+            [
+                "5f6401340f37c4f9"
+            ]
+        ]
+    },
+    {
+        "id": "1ffef09c4210e2d8",
+        "type": "mqtt in",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "ALLARME",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "bff5bf949e2a8452",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 800,
+        "wires": [
+            [
+                "5f6401340f37c4f9",
+                "6bf77dcf702b2d60"
+            ]
+        ]
+    },
+    {
+        "id": "d4b85c49bf86d533",
+        "type": "ui_template",
+        "z": "2a535143036c70e1",
+        "group": "ca719da6bf0a85f3",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <thead>\n        <tr>\n            <th>Motivazione</th>\n            <th>Data e Ora</th>\n        </tr>\n    </thead>\n    <tbody id=\"table-body\">\n    </tbody>\n</table>\n\n<script>\n    // Funzione per aggiungere una nuova riga alla tabella\n  function addTableRow(motivazione, dataOra) {\n    var tableBody = document.getElementById(\"table-body\");\n    \n    var rows = tableBody.getElementsByTagName(\"tr\");\n    for (var i = 0; i < rows.length; i++) { \n      var row=rows[i];\n      var dateCell=row.getElementsByTagName(\"td\")[1];\n      if (dateCell.textContent===dataOra) { // Esiste già una riga con la stessa data, non aggiungere una nuova riga \n        return; }\n      }\n    \n    var newRow = document.createElement(\"tr\");\n    var motivazioneCell = document.createElement(\"td\");\n    var dataOraCell = document.createElement(\"td\");\n \n    motivazioneCell.textContent = motivazione;\n    dataOraCell.textContent = dataOra;\n \n    newRow.appendChild(motivazioneCell);\n    newRow.appendChild(dataOraCell);\n    tableBody.appendChild(newRow);\n  }\n \n  // Recupera i dati salvati dal localStorage e ricostruisci la tabella\n  function restoreTableData() {\n    var tableBody = document.getElementById(\"table-body\");\n    var savedData = localStorage.getItem(\"tableData\");\n \n    if (savedData) {\n      var data = JSON.parse(savedData);\n \n      tableBody.innerHTML = \"\";\n\n      data.forEach(function(row) {\n        addTableRow(row.motivazione, row.dataOra);\n      });\n    }\n  }\n \n  // Salva i dati della tabella nel localStorage\n  function saveTableData(motivazione, dataOra) {\n    var savedData = localStorage.getItem(\"tableData\");\n    var data = [];\n \n    if (savedData) {\n      data = JSON.parse(savedData);\n    }\n \n    data.push({ motivazione: motivazione, dataOra: dataOra });\n \n    localStorage.setItem(\"tableData\", JSON.stringify(data));\n  }\n \n  // Registra la funzione di gestione dell'evento\n  (function(scope) {\n    scope.$watch('msg', function(msg) {\n      if (msg) {\n          var motivazione = msg.payload.motivazione;\n          var dataOra = msg.payload.data;\n          addTableRow(motivazione, dataOra);\n          saveTableData(motivazione, dataOra);\n      }\n    });\n \n    // Richiama la funzione per ripristinare i dati salvati\n    restoreTableData();\n  })(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b803b3c38ba35d0",
+        "type": "mqtt in",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "Codice aggiornato",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "bff5bf949e2a8452",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 860,
+        "wires": [
+            [
+                "5f6401340f37c4f9"
+            ]
+        ]
+    },
+    {
+        "id": "6bf77dcf702b2d60",
+        "type": "function",
+        "z": "2a535143036c70e1",
+        "name": "function 1",
+        "func": "// Ottieni la motivazione dal payload del messaggio MQTT\nvar motivazione = msg.payload;\n\n// Ottieni il timestamp corrente in millisecondi\nvar timestamp = new Date().toLocaleString();\n\n// Costruisci il nuovo messaggio MQTT con i campi \"motivazione\" e \"data\"\nmsg.payload = {\n    motivazione: motivazione,\n    data: timestamp\n};\n\n// Restituisci il messaggio modificato\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 700,
+        "wires": [
+            [
+                "d4b85c49bf86d533"
+            ]
+        ]
+    },
+    {
+        "id": "e650a94b90c1dac6",
+        "type": "mqtt in",
+        "z": "2a535143036c70e1",
+        "name": "",
+        "topic": "ERRORE!",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "bff5bf949e2a8452",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 940,
+        "wires": [
+            [
+                "5f6401340f37c4f9"
+            ]
+        ]
+    },
+    {
+        "id": "d90a3bb7ead9c40d",
+        "type": "ui_template",
+        "z": "2a535143036c70e1",
+        "group": "235a53f597a07159",
+        "name": "link_record",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center;\">\n\n    <body>\n        <p>Per accedere al record degli allarmi clicca <a href=\"http://localhost:1880/ui/#!/2?socketid=tl6SgpnZnnL3dCZnAAAP\">QUI!</a></p>\n    </body>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 630,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f81b6a0f7f65e47",
+        "type": "ui_template",
+        "z": "2a535143036c70e1",
+        "group": "ca719da6bf0a85f3",
+        "name": "link_sblocco1",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"text-align: center;\">\n\n    <body>\n        <p>Torna alla <a href=\"http://localhost:1880/ui/#!/0?socketid=tl6SgpnZnnL3dCZnAAAP\">schermata di sblocco</a></p>\n    </body>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 960,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4629c819a0fd66e9",
+        "type": "ui_template",
+        "z": "5911f7d0a3f15044",
+        "group": "",
+        "name": "Node-Red custom Dashboard",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n\nbody{\nbackground: -webkit-linear-gradient(\n55deg,\n#009785 0%,\n#245aa5 50%,\n#b800e9 100%\n);\n-webkit-touch-callout: none !important;\n}\n\n.nr-dashboard-theme .nr-dashboard-form-button {\nbackground-color: rgba(255,255,255,0.1) !important;\ncolor: black;\nborder-radius: 50px;\n}\n\n.nr-dashboard-theme .nr-dashboard-button .md-button {\nbackground-color: rgba(255,255,255,0.1) !important;\ncolor: black;\nborder-radius: 50px;\n}\n\n/*Top bar*/ \nbody.nr-dashboard-theme md-toolbar, \nbody.nr-dashboard-theme md-content md-card {\nbackground-color: transparent !important;\n color: #FFFFFF !important; \n}\n\n.nr-dashboard-template p, .nr-dashboard-template h1, .nr-dashboard-template h2, .nr-dashboard-template h3,\n.nr-dashboard-template h4 {\ncolor: #eeeeee !important;\nbackground-color: rgba(255,255,255,0.1) !important;\nborder-radius: 50px\n}\n\n/*Groups*/\nui-card-panel {\nbackground-color: rgba(255,255,255,0.1) !important;\ncolor: white !important; \nborder-radius: 10px !important;\n}\n.nr-dashboard-theme ui-card-panel {\nborder: none !important;\n}\n/*Name groups*/ \n.nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\ncolor: rgba(255, 255, 255) !important; \n}\n\n\n\n\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 290,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    }
+]
